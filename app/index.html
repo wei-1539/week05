@@ -1,58 +1,172 @@
 ---
-title: Boostrap Index
+title: Assignment
 layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
 
-<!-- <div class="container">
-  <h1 class="index__h1">這是一段話</h1>
-  <div class="alert alert-primary" role="alert">
-    A simple primary alert—check it out!
-  </div>
-  <div class="alert alert-secondary" role="alert">
-    A simple secondary alert—check it out!
-  </div>
-  <div class="alert alert-success" role="alert">
-    A simple success alert—check it out!
-  </div>
-  <div class="alert alert-danger" role="alert">
-    A simple danger alert—check it out!
-  </div>
-  <div class="alert alert-warning" role="alert">
-    A simple warning alert—check it out!
-  </div>
-  <div class="alert alert-info" role="alert">
-    A simple info alert—check it out!
-  </div>
-  <div class="alert alert-light" role="alert">
-    A simple light alert—check it out!
-  </div>
-  <div class="alert alert-dark" role="alert">
-    A simple dark alert—check it out!
-  </div>
-</div> -->
-
-<!-- Button trigger modal -->
-<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button> -->
-
-<!-- Modal -->
-<!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+<div class="container py-7">
+  <div class="header d-flex justify-content-between mb-8">
+    <div class="left d-flex align-items-center">
+      <h2 class="fs-4 me-8 fw-bold">Assignment</h2>
+      <div class="btn-group">
+        <button type="button" class="btn btn-white">All Courses</button>
+        <button type="button" class="btn btn-white dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Courses1</a></li>
+          <li><a class="dropdown-item" href="#">Courses2</a></li>
+          <li><a class="dropdown-item" href="#">Courses3</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Courses4</a></li>
+        </ul>
       </div>
     </div>
+    <div class="right d-flex align-items-center">
+      <a href="#" class="me-6">
+        <span class="material-icons">
+          search
+        </span>
+      </a>
+      <a href="#">
+        <span class="material-icons">
+          notifications_active
+        </span>
+      </a>
+    </div>
   </div>
-</div> -->
+  <div class="main d-flex ">
+    <div class="Assignment_list w-40 me-4">
+      <a href="#" class="d-flex align-items-center fw-bold mb-2">
+        All (4) 
+        <span class="material-icons">expand_more</span>
+      </a>
+      <ul class="list-group border-gray-400 ">
+        <li class="list-group-item p-3 d-flex justify-content-between bg-light" aria-current="true">
+          <div class="Assignment_list_title">
+            <p class="mb-1 fs-8 lh-base">Chapter Assignment 2</p>
+            <p class="fw-bold">Please check this file…</p>
+          </div>
+          <div class="Assignment_list_info ">
+            <p class="mb-1 fs-8 lh-base text-end">4 hrs ago</p>
+            <p class="text-secondary fs-8 lh-base">Emily Wang</p>
+          </div>
+        </li>
+        <li class="list-group-item p-3 d-flex justify-content-between" >
+          <div class="Assignment_list_title">
+            <p class="mb-1 fs-8 lh-base">Chapter Assignment 1</p>
+            <p class="fw-bold">My Homework</p>
+          </div>
+          <div class="Assignment_list_info ">
+            <p class="mb-1 fs-8 lh-base text-end">12 hrs ago</p>
+            <p class="text-secondary fs-8 lh-base">David Xu</p>
+          </div>
+        </li>
+        <li class="list-group-item p-3 d-flex justify-content-between " >
+          <div class="Assignment_list_title">
+            <p class="mb-1 fs-8 lh-base">Final Assignment</p>
+            <p class="fw-bold">Have a problem with this…</p>
+          </div>
+          <div class="Assignment_list_info ">
+            <p class="mb-1 fs-8 lh-base text-end">18 hrs ago</p>
+            <p class="text-secondary fs-8 lh-base">Tony Wei</p>
+          </div>
+        </li>
+        <li class="list-group-item p-3 d-flex justify-content-between " >
+          <div class="Assignment_list_title">
+            <p class="mb-1 fs-8 lh-base">Final Assignment</p>
+            <p class="fw-bold">Did I do it right?</p>
+          </div>
+          <div class="Assignment_list_info ">
+            <p class="mb-1 fs-8 lh-base text-end">19 hrs ago</p>
+            <p class="text-secondary fs-8 lh-base">Christina Lin</p>
+          </div>
+        </li>
+       
+      </ul>
+    </div>
+    <div class="Assignment_edit w-60">
+      <a href="#" class="fw-bold d-flex justify-content-end mb-4" >2 comments</a>
+      <div class="card mb-4">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <div class="info">
+            <p class="text-secondary lh-base fs-8 mb-1">Chapter Assignment 2 / HTML&CSS</p>
+            <p class="fw-bold lh-base">Please check this file for me, thanks!</p>
+          </div>
+          <a href="#">
+            <span class="material-icons">
+              more_vert
+            </span>
+          </a>
+        </div>
+        <div class="card-body pe-7 ">
+          <div class="question mb-4">
+            <div class="person-control d-flex align-items-center mb-4">
+              <div class="person_photo  rounded-circle">person email</div>
+              <div class="name ms-2">
+                <h5 class="card-title fw-bold lh-base ">Emily Wang</h5>
+                <p class="card-text fs-8 lh-base">10:38 AM (4 hours ago)</p>
+              </div>
+            </div>
+            <p class="fs-7 lh-base ms-8 mb-4">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <span class="text-success">div</span> is bigger than the height of the <span class="text-success">img</span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin.<br> What is the gap or extra space below image?</p>
+            <div class="ms-8 mb-4 ps-3 py-2 bg-light w-176 border border-gray-400 ">
+              <a href="#" class="d-flex align-items-center fw-bold lh-base">
+                <span class="material-icons me-2">attach_file</span>
+                HW-2-David.zip
+              </a>
+            </div>
+            <div class="ms-8   border border-gray-400"></div>
+          </div>
+
+          <div class="answer">
+            <div class="answer_header d-flex justify-content-between mb-4">
+              <div class="teacher-control d-flex align-items-center">
+                <div class="teacher_photo  rounded-circle">Andy Chen (You)</div>
+                <div class="name ms-2">
+                  <h5 class="card-title fw-bold lh-base ">Andy Chen (You)</h5>
+                  <p class="card-text fs-8 lh-base">13:24 AM (1 hours ago)</p>
+                </div>
+              </div>
+              <div class="icons">
+                <a href="#">
+                  <span class="material-icons">
+                    star_outline
+                  </span>
+                </a>
+                <a href="#" class="ms-6">
+                  <span class="material-icons">
+                    edit
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="answer_content ms-8 fs-7 lh-base">
+              <p>Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.</p>
+              <p class="py-3">You can: </p>   
+              <p>• adjust the vertical-align of the image to position it elsewhere (e.g. the middle ) or 　</p>  
+              <p>• change the display so it isn’t inline.</p> 
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="d-flex justify-content-between">
+        <div class="">
+          <a href="#" class="me-6"><span class="material-icons">chevron_left</span></a>
+          <a href="#"><span class="material-icons">chevron_right</span></a>
+        </div>
+        <div class="">
+          <a href="#" class="btn btn-outline-success  fw-bold me-4 px-6 py-2">Mark as read</a>
+          <a href="#" class="btn btn-success fw-bold px-7 py-2">Reply</a>
+        </div>
+      </div>
+
+      <!-- 彈跳視窗 -->
+
+    </div>
+  </div>
+</div>
