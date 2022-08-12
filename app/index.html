@@ -5,7 +5,8 @@ engine: ejs
 current: index
 ---
 
-<div class="container py-7">
+<div class="container pt-7">
+  <!-- 導覽列 -->
   <div class="header d-flex justify-content-between mb-8">
     <div class="left d-flex align-items-center">
       <h2 class="fs-4 me-8 fw-bold">Assignment</h2>
@@ -15,6 +16,7 @@ current: index
           aria-expanded="false">
           <span class="visually-hidden">Toggle Dropdown</span>
         </button>
+
         <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="#">Courses1</a></li>
           <li><a class="dropdown-item" href="#">Courses2</a></li>
@@ -24,6 +26,7 @@ current: index
           </li>
           <li><a class="dropdown-item" href="#">Courses4</a></li>
         </ul>
+
       </div>
     </div>
     <div class="right d-flex align-items-center">
@@ -39,59 +42,82 @@ current: index
       </a>
     </div>
   </div>
-  <div class="main d-flex ">
-    <div class="Assignment_list w-40 me-4">
-      <a href="#" class="d-flex align-items-center fw-bold mb-2">
-        All (4) 
-        <span class="material-icons">expand_more</span>
-      </a>
-      <ul class="list-group border-gray-400 ">
-        <li class="list-group-item p-3 d-flex justify-content-between bg-light" aria-current="true">
-          <div class="Assignment_list_title">
-            <p class="mb-1 fs-8 lh-base">Chapter Assignment 2</p>
-            <p class="fw-bold">Please check this file…</p>
-          </div>
-          <div class="Assignment_list_info ">
-            <p class="mb-1 fs-8 lh-base text-end">4 hrs ago</p>
-            <p class="text-secondary fs-8 lh-base">Emily Wang</p>
-          </div>
-        </li>
-        <li class="list-group-item p-3 d-flex justify-content-between" >
-          <div class="Assignment_list_title">
-            <p class="mb-1 fs-8 lh-base">Chapter Assignment 1</p>
-            <p class="fw-bold">My Homework</p>
-          </div>
-          <div class="Assignment_list_info ">
-            <p class="mb-1 fs-8 lh-base text-end">12 hrs ago</p>
-            <p class="text-secondary fs-8 lh-base">David Xu</p>
-          </div>
-        </li>
-        <li class="list-group-item p-3 d-flex justify-content-between " >
-          <div class="Assignment_list_title">
-            <p class="mb-1 fs-8 lh-base">Final Assignment</p>
-            <p class="fw-bold">Have a problem with this…</p>
-          </div>
-          <div class="Assignment_list_info ">
-            <p class="mb-1 fs-8 lh-base text-end">18 hrs ago</p>
-            <p class="text-secondary fs-8 lh-base">Tony Wei</p>
-          </div>
-        </li>
-        <li class="list-group-item p-3 d-flex justify-content-between " >
-          <div class="Assignment_list_title">
-            <p class="mb-1 fs-8 lh-base">Final Assignment</p>
-            <p class="fw-bold">Did I do it right?</p>
-          </div>
-          <div class="Assignment_list_info ">
-            <p class="mb-1 fs-8 lh-base text-end">19 hrs ago</p>
-            <p class="text-secondary fs-8 lh-base">Christina Lin</p>
-          </div>
-        </li>
-       
+  <div class="d-flex justify-content-between align-items-center mb-1">
+    <!-- 摺疊選單 -->
+    <div class="dropdown">
+      <button class="btn btn-white dropdown-toggle fw-bold " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        All (4)
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="#1">Please check this file…</a></li>
+        <li><a class="dropdown-item" href="#2">My Homework</a></li>
+        <li><a class="dropdown-item" href="#3">Have a problem with this…</a></li>
+        <li><a class="dropdown-item" href="#4">Did I do it right?</a></li>
       </ul>
     </div>
-    <div class="Assignment_edit w-60">
-      <a href="#" class="fw-bold d-flex justify-content-end mb-4" >2 comments</a>
-      <div class="card mb-4">
+    <a href="#" class="fw-bold d-flex justify-content-end " >2 comments</a>
+
+  </div>
+  <!-- 內文 -->
+  <div class="main d-flex row">
+    <div class="Assignment_list col-4">
+      
+      <!-- card -->
+      <ul class="list-group border-gray-400 ">
+        <li>
+          <a href="#" id="1" class="list-group-item list-group-item-action p-3 d-flex justify-content-between bg-light">
+            <div class="Assignment_list_title">
+              <p class="mb-1 fs-8 lh-base">Chapter Assignment 2</p>
+              <p class="fw-bold">Please check this file…</p>
+            </div>
+            <div class="Assignment_list_info ">
+              <p class="mb-1 fs-8 lh-base text-end">4 hrs ago</p>
+              <p class="text-secondary fs-8 lh-base">Emily Wang</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" id="2" class="list-group-item list-group-item-action p-3 d-flex justify-content-between">
+            <div class="Assignment_list_title">
+              <p class="mb-1 fs-8 lh-base">Chapter Assignment 1</p>
+              <p class="fw-bold">My Homework</p>
+            </div>
+            <div class="Assignment_list_info ">
+              <p class="mb-1 fs-8 lh-base text-end">12 hrs ago</p>
+              <p class="text-secondary fs-8 lh-base">David Xu</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" id="3" class="list-group-item list-group-item-action p-3 d-flex justify-content-between ">
+            <div class="Assignment_list_title">
+              <p class="mb-1 fs-8 lh-base">Final Assignment</p>
+              <p class="fw-bold">Have a problem with this…</p>
+            </div>
+            <div class="Assignment_list_info ">
+              <p class="mb-1 fs-8 lh-base text-end">18 hrs ago</p>
+              <p class="text-secondary fs-8 lh-base">Tony Wei</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" id="4" class="list-group-item list-group-item-action p-3 d-flex justify-content-between ">
+            <div class="Assignment_list_title">
+              <p class="mb-1 fs-8 lh-base">Final Assignment</p>
+              <p class="fw-bold">Did I do it right?</p>
+            </div>
+            <div class="Assignment_list_info ">
+              <p class="mb-1 fs-8 lh-base text-end">19 hrs ago</p>
+              <p class="text-secondary fs-8 lh-base">Christina Lin</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="Assignment_edit col-8">
+
+      <div class="card mb-4 ">
+        <!-- 表頭 -->
         <div class="card-header d-flex justify-content-between align-items-center">
           <div class="info">
             <p class="text-secondary lh-base fs-8 mb-1">Chapter Assignment 2 / HTML&CSS</p>
@@ -103,8 +129,8 @@ current: index
             </span>
           </a>
         </div>
-        <div class="card-body pe-7 ">
-          <div class="question mb-4">
+        <!-- 文章內容 -->
+        <div class="card-body pe-7 pb-0 ">
             <div class="person-control d-flex align-items-center mb-4">
               <div class="person_photo  rounded-circle">person email</div>
               <div class="name ms-2">
@@ -112,17 +138,17 @@ current: index
                 <p class="card-text fs-8 lh-base">10:38 AM (4 hours ago)</p>
               </div>
             </div>
-            <p class="fs-7 lh-base ms-8 mb-4">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <span class="text-success">div</span> is bigger than the height of the <span class="text-success">img</span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin.<br> What is the gap or extra space below image?</p>
+            <p class="fs-7 lh-base ms-8 mb-4">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <code class="text-success bg-light">div</code> is bigger than the height of the <code class="text-success bg-light">img</code> ? There is a gap below the image, but it doesn’t seems to be a padding/margin.<br> What is the gap or extra space below image?</p>
             <div class="ms-8 mb-4 ps-3 py-2 bg-light w-176 border border-gray-400 ">
-              <a href="#" class="d-flex align-items-center fw-bold lh-base">
+              <a href="#" download="HW-2-David.zip" class="d-flex align-items-center fw-bold lh-base">
                 <span class="material-icons me-2">attach_file</span>
                 HW-2-David.zip
               </a>
             </div>
             <div class="ms-8   border border-gray-400"></div>
-          </div>
-
-          <div class="answer">
+        </div>
+        <!-- 文章回復 -->
+        <div class="card-body" id="answer">
             <div class="answer_header d-flex justify-content-between mb-4">
               <div class="teacher-control d-flex align-items-center">
                 <div class="teacher_photo  rounded-circle">Andy Chen (You)</div>
@@ -147,26 +173,71 @@ current: index
             <div class="answer_content ms-8 fs-7 lh-base">
               <p>Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.</p>
               <p class="py-3">You can: </p>   
-              <p>• adjust the vertical-align of the image to position it elsewhere (e.g. the middle ) or 　</p>  
-              <p>• change the display so it isn’t inline.</p> 
+              <p>• adjust the <code class="bg-light text-success">vertical-align</code> of the image to position it elsewhere (e.g. the <code class="bg-light text-success">middle</code> ) or 　</p>  
+              <p>• change the <code class="bg-light text-success">display</code> so it isn’t inline.</p> 
+            </div>
+          
+        </div>
+        
+        <!-- 修改視窗 -->
+        <div class="card edit d-none "  id="edit">
+          <div class="card-header  d-flex align-items-center">
+            <div class="dropdown">
+              <button class="btn fw-bold dropdown-toggle me-2" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Body Text
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">微軟正黑體</a></li>
+                <li><a class="dropdown-item" href="#">蘋方體</a></li>
+                <li><a class="dropdown-item" href="#">標楷體</a></li>
+              </ul>
+            </div>
+            <a  href="#">
+              <span class="material-icons-outlined me-4 align-center">format_bold</span>
+            </a>
+            <a  href="#">
+              <span class="material-icons-outlined me-4">format_italic</span>
+            </a>
+            <a  href="#">
+              <span class="material-icons-outlined me-4">format_list_bulleted</span>
+            </a>
+            <a  href="#">
+              <span class="material-icons-outlined me-4">format_list_numbered</span>
+            </a>
+            <a  href="#">
+              <span class="material-icons me-4">photo</span>
+            </a>
+            <a  href="#">
+              <span class="material-icons me-4">insert_link</span>
+            </a>
+            <a  href="#">
+              <span class="material-icons-outlined me-4">code</span>
+            </a>
+          </div>
+          
+          <div class="card-body edit_body">
+            <form>
+              <textarea class="w-100 border-0" placeholder="Reply an answer…" rows="12"></textarea>
+            </form>
+            <div class="d-flex justify-content-end">
+              <a href="#" id="close" class="btn btn-outline-success  fw-bold me-4 px-7 py-2">Cancle</a>
+              <button class="btn btn-success fw-bold px-7 py-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling">Reply</button>
             </div>
           </div>
         </div>
-        
+
       </div>
-      <div class="d-flex justify-content-between">
+
+      <div class="d-flex justify-content-between" id="outBtn">
         <div class="">
           <a href="#" class="me-6"><span class="material-icons">chevron_left</span></a>
           <a href="#"><span class="material-icons">chevron_right</span></a>
         </div>
         <div class="">
           <a href="#" class="btn btn-outline-success  fw-bold me-4 px-6 py-2">Mark as read</a>
-          <a href="#" class="btn btn-success fw-bold px-7 py-2">Reply</a>
+          <button id="reply" class="btn btn-success fw-bold px-7 py-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling">Reply</button>
         </div>
       </div>
-
-      <!-- 彈跳視窗 -->
-
-    </div>
+      
   </div>
 </div>

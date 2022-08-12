@@ -20,3 +20,13 @@
   white-space: nowrap;
   overflow: hidden;
 }
+
+.edit{
+ 
+  &_body{
+    textarea{
+      resize: none;
+      outline: none;
+    }
+  }
+}
