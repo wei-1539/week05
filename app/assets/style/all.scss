@@ -3,6 +3,7 @@
 @import "./helpers/utilities";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
-@import "./base/reset";
+// @import "./base/reset";
+@import "./base/base";
 @import "./layout/header";
 @import './layout/index.scss'
