@@ -1,10 +1,90 @@
----
-title: Assignment
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
-<div class=" p-7 w-100">
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:ital,wght@0,700;0,900;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/all.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  </head>
+
+  <body>
+    <div class="d-flex">
+      <nav class="menu bg-light py-7 w-25 d-flex flex-column justify-content-between">
+          <div class="top">
+            <h1 class="ps-7 mb-7"><a href="index.html"><img src="./assets/images/week5/logo-ANSWER.svg" alt="logo" class="img-fluid"></a></h1>
+            <ul class=" menu_list list-unstyled">
+              <li class="menu_item ps-7 mb-6">
+                <a href="#" class=" d-flex align-items-center fw-bold fs-6 lh-base">
+                  <span class="material-icons pe-4">
+                    assessment
+                  </span>
+                  Dashboard
+                </a>
+              </li>
+              <li class="menu_item ps-7 mb-6">
+                <a href="#" class="d-flex align-items-center fw-bold">
+                  <span class="material-icons pe-4">
+                    question_answer
+                  </span>
+                  Question
+                </a>
+              </li>
+              <li class="menu_item ps-7 mb-6">
+                <a href="index.html" class=" d-flex align-items-center fw-bold">
+                  <span class="material-icons pe-4">
+                    assignment
+                  </span>
+                  Assignment
+                </a>
+              </li>
+              <li class="menu_item ps-7 mb-6">
+                <a href="#" class=" d-flex align-items-center fw-bold">
+                  <span class="material-icons pe-4">
+                    video_library
+                  </span>
+                  Course
+                </a>
+              </li>
+              <li class="menu_item ps-7 mb-6">
+                <a href="admin.html" class=" d-flex align-items-center fw-bold">
+                  <span class="material-icons pe-4">
+                    people
+                  </span>
+                  Admin
+                </a>
+              </li>
+              <li class="menu_item ps-7 mb-6">
+                <a href="#" class=" d-flex align-items-center fw-bold">
+                  <span class="material-icons pe-4">
+                    settings
+                  </span>
+                  Settings
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="down">
+            <a href="#" class="member px-7 d-flex align-items-center">
+              <img class="member_photo rounded-circle me-4" src="./assets/images/week5/andychen.jpeg" alt="member">
+              <div class="member_title">
+                <p class="fw-bold fs-6 lh-base">Andy Chen</p>
+                <p class=" fs-6 lh-base text-secondary">andy0401@mail.com</p>
+              </div>
+            </a>
+          </div>
+      </nav>
+
+      <div class=" p-7 w-100">
     <!-- 導覽列 -->
     <div class="header d-flex justify-content-between mb-8">
         <div class="left d-flex align-items-center">
@@ -462,3 +542,12 @@ current: index
     </div>
   </div>
   
+    </div>
+    
+  
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+    
+  </body>
+
+</html>
